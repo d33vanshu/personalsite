@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: navy;
+  height: 275px;
+}
+
+header h2 {
+  color: white;
+  font-size: 3em;
+  font-weight: normal;
+}
+
+header .social-nav {
+  position: absolute;
+  bottom: -30px;
+}
+
+.social-nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.social-nav ul li {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 1em;
+}
+
+.social-nav ul li:last-child {
+  margin-right: 0;
+}
+
+.social-nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: blue;
+  border: 4px solid white;
+}
+
+.social-nav .sn-twitter {
+  background: url('./images/twitter.svg') no-repeat 50% 50%;
+  background-color: #1DA1F2;
+}
+
+.social-nav .sn-instagram {
+  background: url('./images/instagram.svg') no-repeat 50% 50%;
+  background-color: #E1306C;
+}
+
+.social-nav .sn-website{
+  background: url('./images/globe.svg') no-repeat 50% 50%;
+  background-color: #77A8B1;
+}
+
+section.about {
+  padding: 4em 2em 2em 2em;
+}
+
+section.about p {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.projects h1 {
+  width: 100%;
+  flex-basis: 100%;
+  text-align: center;
+  margin: 1em;
+}
+
+.project {
+  display: block;
+  width: 286px;
+  background: red;
+  margin-bottom: 20px;
+  height: 200px;
+  position: relative;
+}
+
+.project h5 {
+  display: block;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.8em;
+  position: absolute;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  font-weight: normal;
+  bottom: 0;
+}
